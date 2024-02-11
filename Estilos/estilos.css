@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(16, 2, 48, 0.9176470588);
+  scroll-behavior: smooth;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+body.dark {
+  background-color: #E9E7F7;
+}
+
+.header {
+  background-color: rgba(16, 2, 48, 0.9176470588);
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #B2B1B7;
+}
+body.dark .header {
+  background-color: #E9E7F7;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 12px;
+}
+.header .nav a {
+  color: #F0E4FE;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+body.dark .header .nav a {
+  color: #100B1E;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 3rem 0px;
+}
+.container h1 {
+  text-align: center;
+  padding: 12px;
+  margin: 2rem;
+  letter-spacing: 2px;
+  font-family: "Secular One", sans-serif;
+  font-weight: 700;
+  color: #F0E4FE;
+  transition: background-color 0.3s, color 0.4s;
+}
+body.dark .container h1 {
+  color: #100B1E;
+}
+
+.data {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  margin: 12px 6px 30px;
+  color: #dfdada;
+  transition: background-color 0.3s, color 0.4s;
+}
+body.dark .data {
+  color: #100B1E;
+}
+.data h2 {
+  font-size: 20px;
+  margin: 12px 8px;
+}
+.data p {
+  font-weight: 300;
+  padding: 8px;
+}
+
+.welcome {
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  width: 90%;
+  background-color: #e0e0e0;
+  margin: 20px auto 80px;
+  padding: 30px 12px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px rgba(32, 32, 32, 0.5);
+  transition: background-color 0.3s, color 0.4s;
+}
+body.dark .welcome {
+  background-color: #49a599;
+}
+.welcome p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 4px 0;
+  margin: 8px 2px;
+}
+.welcome .info {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+.welcome .info input {
+  font-family: "Montserrat", sans-serif;
+  background-color: #e7e1e1;
+  border: 1px solid #100B1E;
+  border-radius: 7px;
+  margin: 0px 12px;
+  padding: 6px;
+}
+.welcome .info .btn2 {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(25, 49, 158, 0.836);
+  color: #dfdada;
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 6px 8px;
+  cursor: pointer;
+}
+
+.app {
+  background-color: #e0e0e0;
+  width: 90%;
+  margin: 90px auto 80px;
+  padding: 30px;
+  border-radius: 12px;
+  transition: background-color 0.3s, color 0.4s;
+}
+body.dark .app {
+  background-color: #49a599;
+}
+.app h2 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-bottom: 1px solid black;
+  padding-bottom: 32px;
+}
+.app .quiz {
+  padding: 20px 0px;
+}
+
+.next-question {
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  display: none;
+  background-color: #E9E7F7;
+  color: #09090A;
+  border-radius: 12px;
+  padding: 12px 20px;
+  margin: 30px auto 0;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.4s;
+}
+
+.next-question:hover {
+  background-color: #c2bebe;
+}
+
+.back-question {
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  display: none;
+  background-color: #E9E7F7;
+  color: #09090A;
+  border-radius: 12px;
+  padding: 12px 20px;
+  margin: 30px auto 0;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.4s;
+}
+
+.back-question:hover {
+  background-color: #c2bebe;
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(25, 49, 158, 0.836);
+  color: #dfdada;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  width: 100%;
+  border: none;
+  box-shadow: 4px 4px 10px rgba(32, 32, 32, 0.5);
+  border-radius: 20px;
+  margin: 22px auto;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.4s;
+}
+body.dark .btn {
+  background-color: #dfdada;
+  color: #100B1E;
+}
+
+.btn:hover:not([disabled]) {
+  transition: 0.7s;
+}
+
+.btn:disabled {
+  cursor: no-drop;
+}
+
+.correct {
+  background-color: #39c40e;
+}
+body.dark .correct {
+  background-color: #39c40e;
+}
+
+.incorrect {
+  background-color: #cc0d0d;
+}
+body.dark .incorrect {
+  background-color: #cc0d0d;
+}
+
+/* Imagen */
+.question-image {
+  max-width: 100%;
+  display: block;
+  max-height: 450px;
+  margin: 10px auto;
+}
+
+.score-image {
+  max-width: 100%;
+  padding: 10px 0px;
+}
+
+footer {
+  border-top: 2px solid #B2B1B7;
+  color: #fff;
+  margin: 2rem 0px;
+  transition: background-color 0.3s, color 0.3s;
+}
+body.dark footer {
+  color: #100B1E;
+  border-top: 1px solid #100B1E;
+}
+
+.grupo-1 ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 18px 8px;
+  font-size: 2rem;
+}
+.grupo-1 ul i {
+  padding: 12px 6px;
+}
+
+/* modo oscuro */
+.oscuro {
+  cursor: pointer;
+  margin: 20px 6px;
+  position: relative;
+  display: flex;
+  border-radius: 1000px;
+  background-color: none;
+  border: none;
+  box-shadow: #c1c1c2;
+  outline: none;
+  width: 70px;
+}
+.oscuro::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background: #f9f9f9;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: 0.9s;
+  transition: background-color 0.3s, color 0.4s;
+}
+body.dark .oscuro::after {
+  background: #100B1E;
+}
+.oscuro.active {
+  color: rgba(0, 0, 0, 0);
+}
+.oscuro.active::after {
+  right: 0;
+  left: unset;
+}
+.oscuro span {
+  width: 40px;
+  height: 25px;
+  display: block;
+  background: none;
+  color: #f9f9f9;
+  transition: background-color 0.3s, color 0.4s;
+}
+body.dark .oscuro span {
+  color: #100B1E;
+}
+.oscuro span i {
+  justify-content: space-between;
+  font-size: 16px;
+  padding: 4px 12px;
+}/*# sourceMappingURL=estilos.css.map */

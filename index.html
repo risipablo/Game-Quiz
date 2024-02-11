@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="./Estilos/estilos.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <a href="./index.html"> Volver  </a>
+            <div class="oscuro" id="oscuro">
+                <span> <i class="fa-solid fa-moon"></i> </span>
+                <span> <i class="fa-regular fa-sun"></i> </span>
+            </div>
+        </nav>
+    </header>
+
+        <div class="container">
+            <h1>QUIZ GAME</h1>
+            <section class="data">
+                <h2> ¿Te atreves a poner a prueba tus conocimientos de Front End? 💻 🖥️</h2>
+                <br/>
+                <p>Se trata de un sencillo juego de opción múltiple. Deberás seleccionar la respuesta correcta para obtener un buen resultado al final del juego.</p>
+                <br/>
+                <p> Este juego es simplemente para divertirse y evaluar tus habilidades en programación.</p>
+                <br/>
+                <p> ¡Buena suerte! 💪 </p>
+            </section>
+
+            <div class="welcome">
+                <p> Antes de empezar a jugar debemos verificar su edad </p>
+                <div class="info">
+                    <input placeholder="Ingrese su edad" type="text" id="input">
+                    <button class="btn2" id="startButton">Confirmar</button>
+                </div>
+            </div>
+        
+            <div class="app" style="display: none;">
+                <div class="quiz">
+                    <h2 id="question"> preguntas </h2>
+                    <div id="answer-buttons">
+                        <button class="btn"> Answer 1</button>
+                        <button class="btn"> Answer 2</button>
+                        <button class="btn"> Answer 3</button>
+                    </div>
+                    <button class="next-question" id="nextButton"></button>
+                    <button class="back-question" id="backButton"></button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="grupo-1">
+                <ul>
+                    <li> <i class="fa-brands fa-linkedin"></i> </li>
+                    <li> <i class="fa-brands fa-github"></i></li>
+                    <li> <i class="fa-solid fa-arrow-up-right-from-square"></i> </li>
+                </ul>
+            </div>
+        </footer>
+        
+        <script src="game.js"></script>
+        <script src="darkmode.js"></script>
+</body>
+</html>
