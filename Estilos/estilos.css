@@ -94,6 +94,7 @@ body.dark .data {
   font-family: "Montserrat", sans-serif;
   display: block;
   width: 90%;
+  max-width: 600px;
   background-color: #e0e0e0;
   margin: 20px auto 80px;
   padding: 30px 12px;
@@ -137,6 +138,7 @@ body.dark .welcome {
 .app {
   background-color: #e0e0e0;
   width: 90%;
+  max-width: 700px;
   margin: 90px auto 80px;
   padding: 30px;
   border-radius: 12px;
@@ -242,8 +244,8 @@ body.dark .incorrect {
 .question-image {
   max-width: 100%;
   display: block;
-  max-height: 450px;
-  margin: 10px auto;
+  max-height: 900px;
+  margin: 20px auto;
 }
 
 .score-image {
@@ -270,7 +272,11 @@ body.dark footer {
   font-size: 2rem;
 }
 .grupo-1 ul i {
+  color: #E9E7F7;
   padding: 12px 6px;
+}
+body.dark .grupo-1 ul i {
+  color: #100B1E;
 }
 
 /* modo oscuro */
@@ -284,7 +290,7 @@ body.dark footer {
   border: none;
   box-shadow: #c1c1c2;
   outline: none;
-  width: 70px;
+  width: 40px;
 }
 .oscuro::after {
   content: "";
