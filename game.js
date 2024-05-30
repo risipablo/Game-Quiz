@@ -14,9 +14,9 @@
             question : "¿Cuál es la propiedad correcta?",
             image:"./Imagenes/css.jpg",
             answers: [
-                {text: "display:flex. justify-content: space-around", correct: false},
-                {text: "display:block. justify-content: space-between ", correct: false},
-                {text: "display:flex. justify-content: space-between", correct: true},
+                {text: "display: flex. justify-content: space-around", correct: false},
+                {text: "display: block. justify-content: space-between ", correct: false},
+                {text: "display: flex. justify-content: space-between", correct: true},
             ]
         },
         {
